@@ -1,0 +1,399 @@
+/* common styles or utilities start  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+/* common styles or utilities end  */
+
+/* top section styles start */
+
+#top-section {
+    background: #2D25A0;
+    min-height: 100vh;
+}
+
+.inner-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-top: 150px;
+}
+
+.banner-title {
+    margin-bottom: 50px;
+}
+
+.banner-title h1 {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+    max-width: 500px;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+.watch-btn {
+    color: #FFFFFF;
+    background: #E02C6D;
+    width: 168px;
+    height: 44px;
+    border: 2px solid #E02C6D;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    transition: background-color .3s;
+}
+
+.watch-btn i {
+    margin-left: 5px;
+}
+
+.watch-btn:hover {
+    background-color: black;
+}
+
+/* top section styles end */
+
+/* players section styles start */
+
+#players {
+    background: #FFFFFF;
+    padding: 100px 0;
+}
+
+.inner-player {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+.player-image {
+    max-height: 256px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.player-image img {
+    transition: 0.3s;
+    width: 100%;
+}
+
+.player:hover .player-image img {
+    transform: scale(1.2);
+}
+
+.player h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+
+
+.player p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+    margin-bottom: 33px;
+}
+
+/* players section styles end */
+
+/* highlights section styles start */
+
+#highlights {
+    padding: 100px 0;
+    background: #FFFFFF;
+}
+
+.inner-highlights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight-banner img {
+    width: 100%;
+}
+
+.highlight-match {
+    width: 100%;
+    padding-right: 66px;
+}
+
+.highlight-match h2 {
+    max-width: 470px;
+    color: #0A0826;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 8px;
+}
+
+.highlight-match p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 24px;
+}
+
+/* highlights section styles end */
+
+/* footer section styles start */
+
+footer {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.logo {
+    margin: 0 auto;
+    max-width: 484px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100%;
+    
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links ul li {
+    list-style: none;
+    margin: 0 7px;
+    padding: 9px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: #E7E7E8
+}
+
+.social-links ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links ul li a i {
+    font-size: 15px;
+    margin: 0 7px;
+    color: #969BAB;
+}
+
+footer p {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 20px 0px;
+    color: #000000;
+}
+
+/* footer section styles end */
+
+/* Media Queries */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+    .highlight-match {
+        margin-bottom: 50px;
+    }
+
+    .highlight-match h2 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .highlight-match {
+        padding-right: 15px;
+    }
+
+    .banner-title h1 {
+        font-size: 45px;
+        line-height: 60px;
+        margin-bottom: 27px;
+        max-width: 341px;
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    .watch-btn {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 10px 24px;
+    }
+
+    .inner-highlights {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .inner-player {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .banner-title h1 {
+        font-size: 34px;
+        line-height: 47px;
+        margin-bottom: 27px;
+        width: 282px;
+    }
+
+    .banner-image {
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+
+    #top-section {
+        padding-bottom: 0px;
+        min-height: auto;
+    }
+
+    #players,
+    #highlights {
+        padding: 50px 0;
+    }
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    #top-section {
+        padding-bottom: 15px;
+        height: auto;
+    }   
+
+    .banner-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .inner-player {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player h2 {
+        margin-bottom: 10px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .highlight-match h2 {
+        font-size: 25px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .highlight-match {
+        padding-right: 15px;
+    }
+
+    .section-title {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .inner-banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 63px 0;
+        overflow: hidden;
+    }
+
+    .banner-title h1 {
+        font-size: 31px;
+        line-height: 40px;
+    }
+
+    .banner-image {
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+
+    .container.inner-banner {
+        text-align: center;
+    }
+
+    
+    .logo {
+        max-width: 250px;
+    }
+    
+    footer {
+        padding-top: 0;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    #players,
+    #highlights {
+        padding: 50px 0;
+    }
+
+}
